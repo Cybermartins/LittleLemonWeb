@@ -1,0 +1,31 @@
+.specials{
+  background-color: #fff;
+  
+}
+.specials h2{
+  padding-top: 87px;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Karla", sans-serif;
+}
+.btn-2{
+  background: #f4ce14;
+  color: black;
+  padding: 19px 25px;
+  font-size: 18px;
+  border-radius: 16px;
+  border-width: 0;
+  position: absolute;
+  right: 12%;
+  top: 574px;
+}
+.card-pic{
+  width: 265px;
+  height: 185px;
+}
+.cards{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
