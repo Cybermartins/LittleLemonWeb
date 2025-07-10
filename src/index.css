@@ -4,13 +4,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Karla", sans-serif;
-  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Karla", sans-serif; */
+  font-family: "Roboto", sans-serif;
   /* font-family: "Markazi Text", serif; */
 }
 
 body {
-  background: #f5f5f5;
+  background: #495e57;
 
 }
 a{
@@ -20,6 +20,14 @@ a{
   cursor: pointer ;
 }
 .container{
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+.btn{
+  background: #f4ce14;
+  color: black;
+  padding: 19px 25px;
+  font-size: 18px;
+  border-radius: 16px;
+  border-width: 0;
 }

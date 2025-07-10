@@ -19,7 +19,7 @@ nav {
 nav ul li{
   display: inline-block;
   list-style: none;
-  /* border: #000 solid 2px; */
+  font-family: "Karla", sans-serif;
   margin: 25px 20px;
   font-size: 20px;
   font-weight: 500;
