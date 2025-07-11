@@ -1,0 +1,19 @@
+.footer{
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #333;
+  background-color: #edefee;
+
+}
+.footer ul li{
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer img{
+  width: 35px;
+  height: 35px;
+  margin: 20px auto;
+}

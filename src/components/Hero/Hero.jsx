@@ -4,7 +4,7 @@ import hero_pic from '../../assets/restauranfood.jpg'
 
 const Hero = () => {
   return (
-    <div className='hero container'>
+    <div className='hero container' name='hero'>
       <div className="hero-text">
         <h1>Little Lemon</h1>
         <h2>Chicago</h2>

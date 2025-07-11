@@ -36,6 +36,7 @@ a{
   height: 40px;
   border-radius: 16px;
   border-color: #495e57;
+  border-width: 1px;
   padding: 12px;
   margin: 12px 0 12px 0;
 
@@ -43,4 +44,15 @@ a{
 }
 .dark{
   background-color: #d9d9d9;
+}
+
+
+/*--------------media query------*/
+
+
+@media (max-width: 1060px){
+  .container{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }

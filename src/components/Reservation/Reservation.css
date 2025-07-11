@@ -32,4 +32,8 @@
   align-self: center;
   justify-content: center;
   margin-left: 30%;
+  margin-bottom: 50px;
+}
+input:invalid{
+  box-shadow: 0 0 5px 1px red;
 }
