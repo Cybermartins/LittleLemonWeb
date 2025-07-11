@@ -31,3 +31,16 @@ a{
   border-radius: 16px;
   border-width: 0;
 }
+.input-box{
+  width: auto;
+  height: 40px;
+  border-radius: 16px;
+  border-color: #495e57;
+  padding: 12px;
+  margin: 12px 0 12px 0;
+
+
+}
+.dark{
+  background-color: #d9d9d9;
+}

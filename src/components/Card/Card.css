@@ -6,6 +6,7 @@
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   overflow: hidden;
+  margin: 5px 0 30px 0;
 }
 .card-pic{
   width: 100%;

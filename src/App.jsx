@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import Specials from './components/Specials/Specials';
+import Reservation from './components/Reservation/Reservation';
 
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
       <Navbar/>
       <Hero/>
       <Specials/>
+      <Reservation/>
     </div>
   )
 }

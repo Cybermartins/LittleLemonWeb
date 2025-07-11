@@ -19,12 +19,9 @@
   right: 12%;
   top: 574px;
 }
-.card-pic{
-  width: 265px;
-  height: 185px;
-}
+
 .cards{
-  margin-top: 50px;
+  margin: 50px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
