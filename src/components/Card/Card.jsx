@@ -4,17 +4,17 @@ import delivery from '../../assets/delivery.svg'
 
 const Card = ({pic, title, price, description}) => {
   return (
-    <div className='card'>
+    <section className='card'>
       <img src={pic} alt="" className='card-pic' />
-      <div className='card-text'>
-        <div className='title'>
+      <section className='card-text'>
+        <section className='title'>
           <h2>{title}</h2>
           <span className='price'>{price}</span>
-        </div>
+        </section>
         <p>{description} </p>
         <h4 className='delivery'>Order a delivery <img src={delivery} alt="delivery-icon" className='icon'/></h4>
-      </div>
-    </div>
+      </section>
+    </section>
   )
 }
 

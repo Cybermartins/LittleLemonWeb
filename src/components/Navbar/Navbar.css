@@ -24,3 +24,40 @@ nav ul li{
   font-size: 17px;
   font-weight: 500;
 }
+.menu-icon{
+  display: none;
+}
+
+/*-----------media query-----------*/
+
+@media (max-width: 886px){
+  nav{
+    padding: 15px 0;
+  }
+  nav ul{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #edefee;
+    z-index: -1;
+    width: 170px;
+    padding-top: 50px;
+    transition: 0.5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 25px 30px;
+  }
+  .menu-icon{
+    display: block;
+    width: 25px;
+    cursor: pointer;
+  }
+  .hide-mobile-menu{
+    right: -170px;
+  }
+  .logo{
+    width: 170px;
+  }
+}

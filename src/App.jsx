@@ -6,17 +6,35 @@ import Specials from './components/Specials/Specials';
 import Reservation from './components/Reservation/Reservation';
 import Footer from './components/Footer/Footer';
 
-
 const App = () => {
   return (
-    <>
-      <Navbar/>
-      <Hero/>
-      <Specials/>
-      <Reservation/>
-      <Footer/>
-    </>
-  )
-}
+    <div>
+      {/* Landmark navigation */}
+      <header aria-label="Main navigation">
+        <Navbar />
+      </header>
 
-export default App
+      {/* Main content area */}
+      <main>
+        <section aria-label="Hero section">
+          <Hero />
+        </section>
+
+        <section aria-label="Specials section">
+          <Specials />
+        </section>
+
+        <section aria-label="Reservation section">
+          <Reservation />
+        </section>
+      </main>
+
+      {/* Footer with contact or additional links */}
+      <footer aria-label="Footer">
+        <Footer />
+      </footer>
+    </div>
+  );
+};
+
+export default App;

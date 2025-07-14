@@ -9,12 +9,6 @@
   font-family: "Karla", sans-serif;
 }
 .btn-2{
-  background: #f4ce14;
-  color: black;
-  padding: 19px 25px;
-  font-size: 18px;
-  border-radius: 16px;
-  border-width: 0;
   position: absolute;
   right: 12%;
   top: 574px;
@@ -25,4 +19,59 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+
+/*---------------Media query---------------*/
+
+@media (max-width: 1228px){
+  .btn-2{
+    right: 8%;
+  }
+}
+
+@media(max-width: 1180px){
+
+}
+
+@media (max-width: 1060px){
+  .btn-2{
+    right: 5%;
+  }
+}
+
+@media (max-width: 886px){
+  .specials h2{
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 846px){
+  .cards{
+    margin: 20px auto;
+    flex-direction: column;
+    
+  }
+}
+
+@media (max-width: 604px){
+  .btn-2{
+    position: static;
+  }
+  .specials h2{
+    padding-top: 60px;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .cards{
+    margin: 5px auto;
+  }
+  .specials section{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 }

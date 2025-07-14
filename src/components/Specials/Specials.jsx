@@ -8,45 +8,67 @@ import Card from '../Card/Card';
 const salad = {
   title: 'Greek Salad',
   price: '$12.99',
-  description: 'The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.'
+  description:
+    'The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.',
 };
-const bruchetta = {  
+const bruchetta = {
   title: 'Bruchetta',
-  price: '$ 5.99',
-  description: 'Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. '
+  price: '$5.99',
+  description:
+    'Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.',
 };
-const dessert = {  
+const dessert = {
   title: 'Lemon Dessert',
-  price: '$ 5.00',
-  description: 'This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.'
+  price: '$5.00',
+  description:
+    'This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.',
 };
 
 const Specials = () => {
   return (
-    <div className='specials container'>
-      <h2>Specials</h2>
-      <button className='btn-2'>Online Menu</button>
-      <div className='cards'>
-        <Card
-        pic={salad_pic}
-        title={salad.title}
-        price={salad.price}
-        description={salad.description}/>
+    <section className="specials container" aria-label="Weekly specials menu">
+      <header>
+        <h2>Specials</h2>
+        <section className="centre-btn" aria-label="Centre the button for smaller resolution">
+          <button className="btn btn-2" aria-label="View full online menu">
+          Online Menu
+        </button>
+        </section>
+      </header>
 
-        <Card
-        pic={bruchetta_pic}
-        title={bruchetta.title}
-        price={bruchetta.price}
-        description={bruchetta.description}/>
+      <section
+        className="cards"
+        aria-label="Featured dishes for the week"        
+      >
+        <article aria-label="Greek Salad special">
+          <Card
+            pic={salad_pic}
+            title={salad.title}
+            price={salad.price}
+            description={salad.description}
+          />
+        </article>
 
-        <Card
-        pic={dessert_pic}
-        title={dessert.title}
-        price={dessert.price}
-        description={dessert.description}/>
-      </div>
-    </div>
-  )
-}
+        <article aria-label="Bruchetta special">
+          <Card
+            pic={bruchetta_pic}
+            title={bruchetta.title}
+            price={bruchetta.price}
+            description={bruchetta.description}
+          />
+        </article>
 
-export default Specials
+        <article aria-label="Lemon Dessert special">
+          <Card
+            pic={dessert_pic}
+            title={dessert.title}
+            price={dessert.price}
+            description={dessert.description}
+          />
+        </article>
+      </section>
+    </section>
+  );
+};
+
+export default Specials;
