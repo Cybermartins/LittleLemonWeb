@@ -122,11 +122,19 @@ const BookingForm = () => {
 
           <label htmlFor="time">Time*</label>
           <Field
-            type="time"
+            as="select"
             name="time"
             className="input-box dark"
-            aria-label="Reservation Time"
-          />
+            aria-label="Time Block">
+            <option value="">Select a time block</option>
+            <option value="10:00am-12:00pm">10:00am–12:00pm</option>
+            <option value="12:00pm-2:00pm">12:00pm–2:00pm</option>
+            <option value="2:00pm-4:00pm">2:00pm–4:00pm</option>
+            <option value="4:00pm-6:00pm">4:00pm–6:00pm</option>
+            <option value="6:00pm-8:00pm">6:00pm–8:00pm</option>
+            <option value="8:00pm-10:00pm">8:00pm–10:00pm</option>
+          </Field>
+
           <ErrorMessage name="time" component="div" className="error" />
 
           <input className="btn" type="submit" value="Book a table" aria-label="Submit Booking Form" />
