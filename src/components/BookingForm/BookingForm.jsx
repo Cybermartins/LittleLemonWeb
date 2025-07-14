@@ -24,7 +24,7 @@ const BookingSchema = Yup.object().shape({
     .required('Phone number is required'),
   guest: Yup.string()
     .notOneOf(['select-a-number'], 'Please select number of guests')
-    .required('Guest count is required'),
+    .required('Please select number of guests'),
   table: Yup.string()
     .required('Please choose a table'),
   date: Yup.string()
