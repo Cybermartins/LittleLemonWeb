@@ -32,30 +32,52 @@
   flex-direction: column;
   align-content: center;
   align-self: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-left: 30%;
   margin-bottom: 50px;
 }
-input:invalid{
-  box-shadow: 0 0 5px 1px red;
+.error{
+  font-size: 11px;
+  color: red;
 }
+
 
 /*---------------media query----------------*/
 
 @media (max-width: 785px){
   .form{
     width: 50%;
+    margin-left: 25%;
     padding: 25px;
   }
   .reservation h2{
     font-size: 35px;
-    
-
   }
 }
+
 @media (max-width: 700px){
   .form{
-    width: ;    
+    width:60%;
+    margin-left: 20%;
+    padding: 15px;
+  }  
+}
+
+@media (max-width: 500px){
+  .form{
+    width:70%;
+    margin-left: 15%;
+    padding: 15px;
   }
-  
+}
+
+@media (max-width: 400px){
+  .form{
+    width:80%;
+    margin-left: 10%;
+    padding: 15px;
+  }
+  .reservation h2{
+    font-size: 30px;
+  }
 }
