@@ -36,9 +36,10 @@ const BookingSchema = Yup.object().shape({
 const BookingForm = () => {
   const [tables, setTables] = useState(availableTables.default);
 
-  const handleSubmit = (values) => {
+  const handleSubmit = (values, { resetForm }) => {
     console.log('Reservation:', values);
     alert('Reservation submitted!');
+    resetForm();
   };
 
   const handleDateChange = (e, setFieldValue) => {
